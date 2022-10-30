@@ -83,7 +83,7 @@ body {
     height: 95vh;
     width: auto;
     background-image: url(./assets/bgimg.png);
-    position: relative;
+    /* position: relative; */
     border-bottom: rgb(37, 37, 37) 9px solid;
 }
 
@@ -104,7 +104,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    /* position: relative; */
     z-index: 33;
 
 }
@@ -128,7 +128,7 @@ nav ul {
 }
 
 .headline {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
@@ -175,6 +175,11 @@ nav ul {
     border: #8e0d13 solid 2px;
 }
 
+.image1{
+    position:absolute;
+    margin-left: 1000px;
+    width: 420px;
+}
 .page2,
 .page3 {
     height: 50vh;
@@ -182,7 +187,7 @@ nav ul {
     font-family: sans-serif;
     background-color: black;
     color: white;
-    position: relative;
+    /* position: relative; */
     border-bottom: rgb(37, 37, 37) 9px solid;
     display: flex;
     flex-direction: column;
@@ -190,14 +195,35 @@ nav ul {
     padding: 0 4rem;
 
 }
-
+.image2{
+    position:absolute;
+    margin-right: 1100px;
+    width: 420px;
+}
+.p2{
+    margin-bottom: 200px;
+    margin-left: 900px;
+}
+.save{
+    margin-left: 850px;
+    margin-top: 390px;
+}
+.download{
+    position: absolute;
+    margin-bottom: 100px;
+    margin-left: 850px;
+}
 .page2 {
 
     align-items: flex-start;
 }
 
 .page3 {
-    align-items: flex-end;
+    /* align-items: flex-end; */
+}
+.send{
+   position:absolute;
+   margin-bottom: 200px;
 }
 
 .page2 h2,
@@ -211,8 +237,8 @@ nav ul {
     width: 40%;
     height: auto;
     font-size: 2rem;
-    overflow: hidden;
-    position: relative;
+    /* overflow: hidden; */
+    /* position: relative; */
 }
 
 .unsplash-image {
@@ -222,6 +248,7 @@ nav ul {
     height: 15rem;
     width: 15rem;
 }
+
 
 @media  screen and (max-width:1200px){
     .page2 p,
@@ -277,4 +304,14 @@ nav ul {
     html {
         font-size: calc(8px + 15 * ((100vw - 300px) / (1600 - 300)));
     }
+}
+
+#language {
+    padding: 7px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #aaa;
+    font-size: 13px;
+    width: 94px;
+    outline-style: none;
 }
